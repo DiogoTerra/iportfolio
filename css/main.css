@@ -1,0 +1,44 @@
+/* CSS Geral */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+a {
+    color: aqua;
+    text-decoration: none;
+}
+a:hover{
+    color: aquamarine;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+/* botão para subir == back to top button */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: rgb(rgb(0, 170, 255));
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+.back-to-top i {
+    font-size: 28px;
+    color: rgb(247, 243, 237);
+    line-height: 0;
+}
+.back-to-top:hover {
+    background: rgb(4, 139, 236);
+    color: rgb(243, 240, 255);
+}
+.back-to-top.active{
+    visibility: visible;
+    opacity: 1;
+}
