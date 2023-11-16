@@ -166,13 +166,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: rgb(199, 8, 228);
+    color: rgb(237, 22, 209);
 }
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i{
-    color: rgb(229, 237, 237);
+    color: rgb(237, 22, 209);
 }
 /* mobile Navigation */
 .mobile-nav-toggle{
@@ -194,4 +194,125 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
     border-radius: 50px;
     cursor: pointer;
+}
+.mobile-nav-actve{
+    overflow: hidden;
+}
+.mobile-nav-active #header {
+    left: 0;
+}
+/* ----------- Hero --------------*/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/dragonSin.webp") top center;
+    background-size: cover;
+}
+#hero::before{
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    color: antiquewhite;
+    font-weight: 700;
+    line-height: 56px;
+}
+#hero p{
+    margin-bottom: 50px;
+    color: azure;
+    font-size: 26px;
+    font-family: "poppins" sans-serif;
+}
+#hero p span{
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-radius: 3px solid blue;
+    color: white;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+/* Section Geral */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg{
+    background: #f5f8fd;
+}
+.section-title{
+    padding-bottom: 30px;   
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color:rgb(88, 0, 139)
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: blueviolet;
+    bottom: 0;
+    left: 0;
+}
+.section-title p{
+    margin-bottom: 0;
+}
+
+/* Sobre =============== */
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: purple;   
+}
+.about .content ul{
+    list-style: none;
+    padding: 0;
+}
+.about .content{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.about .content ul strong{
+    margin-right: 10px;
+}
+.about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: blueviolet;
+    line-height: 0;
 }
